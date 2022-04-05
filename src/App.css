@@ -1,38 +1,132 @@
-.App {
+.header {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+}
+
+.Loader {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Loader img {
+  border-radius: 30%;
+}
+
+.main {
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 100px;
+}
+
+.card {
+  background-color: #fff;
+  width: 380px;
+  box-shadow: 2px 2px #888888;
+  border: 1px solid aqua;
+  margin-bottom: 20px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.card h6 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card img {
+  width: 380px;
+  height: 500px;
+  border-radius: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-area {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flex-header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.search-area {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.search label {
+  margin-right: 5px;
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+.filter label {
+  margin-right: 5px;
+  font-weight: 600;
+}
+
+.search input {
+  height: 30px;
+  border: 1px solid aqua;
+}
+
+.filter input {
+  height: 30px;
+  border: 1px solid aqua;
+}
+
+.empty-state {
+  height: 60vh;
+  width: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.footer {
+  display: flex;
+  justify-content: flex-end;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.like-btn {
+  background: blue;
+  color: #fff;
+  border: 1px solid aqua;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  border-radius: 8px;
+}
+.liked {
+  background: rgb(255, 0, 144);
+  color: #fff;
+  border: 1px solid aqua;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  .main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .card img {
+    width: 100%;
+  }
+  .search-area {
+    flex-direction: column;
   }
 }
